@@ -1,0 +1,17 @@
+{
+  "Scripts/test01_login.py::TestLogin": true,
+  "Scripts/test01_login.py::TestLogin::()::test_login[15832089976-ljk520-\\u9519\\u8bef-\\u8d26\\u53f7\\u6216\\u5bc6\\u7801\\u9519\\u8bef]": true,
+  "Scripts/test01_login.py::TestLogin::()::test_login[15832089976-ljk520..-None-\\u7528\\u6237_1892]": true,
+  "Scripts/test_login.py::TestLogin::()::test_login[15832089976-ljk520..-None-\\u7528\\u6237_182]": true,
+  "Scripts/test_login.py::TestLogin::()::test_login[18773201773-123456-\\u672a\\u6ce8\\u518c-\\u8d26\\u53f7\\u8fd8\\u672a\\u6ce8\\u518c\\uff0c\\u8bf7\\u60a8\\u5148\\u8fdb\\u884c\\u6ce8\\u518c\\u6237]": true,
+  "Scripts/test_teacher.py": true,
+  "Scripts/test_teacher.py::TestLogin::()::test_login[15555555555-159357-\\u8fd8\\u672a\\u6ce8\\u518c-\\u8d26\\u53f7\\u8fd8\\u672a\\u6ce8\\u518c\\uff0c\\u8bf7\\u60a8\\u5148\\u8fdb\\u884c\\u6ce8\\u518c]": true,
+  "Scripts/test_teacher.py::TestLogin::()::test_login[158320899-159357-\\u8fd8\\u672a\\u6ce8\\u518c-\\u8d26\\u53f7\\u8fd8\\u672a\\u6ce8\\u518c\\uff0c\\u8bf7\\u60a8\\u5148\\u8fdb\\u884c\\u6ce8\\u518c]": true,
+  "Scripts/test_teacher.py::TestLogin::()::test_login[1583208997-159357-\\u8fd8\\u672a\\u6ce8\\u518c-\\u8d26\\u53f7\\u8fd8\\u672a\\u6ce8\\u518c\\uff0c\\u8bf7\\u60a8\\u5148\\u8fdb\\u884c\\u6ce8\\u518c]": true,
+  "Scripts/test_teacher.py::TestLogin::()::test_login[15832089976-ljk520-\\u9519\\u8bef-\\u8d26\\u53f7\\u6216\\u5bc6\\u7801\\u9519\\u8bef]": true,
+  "Scripts/test_teacher.py::TestLogin::()::test_login[158320899766-159357-\\u8fd8\\u672a\\u6ce8\\u518c-\\u8d26\\u53f7\\u8fd8\\u672a\\u6ce8\\u518c\\uff0c\\u8bf7\\u60a8\\u5148\\u8fdb\\u884c\\u6ce8\\u518c]": true,
+  "Scripts/test_teacher.py::TestLogin::()::test_login[hello#-159357-\\u8fd8\\u672a\\u6ce8\\u518c-\\u8d26\\u53f7\\u8fd8\\u672a\\u6ce8\\u518c\\uff0c\\u8bf7\\u60a8\\u5148\\u8fdb\\u884c\\u6ce8\\u518c]": true,
+  "ceyan/ceyan_17.py::Test_01::()::test_02[123]": true,
+  "ceyan/ceyan_17.py::Test_01::()::test_02[\\u4f60\\u597d]": true,
+  "ceyan/ceyan_17.py::Test_01::()::test_02[hello]": true
+}

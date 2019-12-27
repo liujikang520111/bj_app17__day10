@@ -1,0 +1,210 @@
+<ns0:test-suite xmlns:ns0="urn:model.allure.qatools.yandex.ru" start="1577421079485" stop="1577421263010">
+  <name>test_login</name>
+  <labels/>
+  <test-cases>
+    <test-case start="1577421079485" status="failed" stop="1577421147912">
+      <description>测试方法</description>
+      <name>TestLogin.test_login[15832089976-ljk520..-None-\u7528\u6237_182]</name>
+      <failure>
+        <message>AssertionError: assert '用户_182' == '用户_1892'
+  - 用户_182
+  + 用户_1892
+  ?      +</message>
+        <stack-trace>self = &lt;test_login.TestLogin object at 0x03E82B30&gt;, phone = '15832089976', passwd = 'ljk520..', mess = None, expData = '用户_182'
+
+    @pytest.mark.parametrize("phone, passwd,mess,expData", login_value())
+    def test_login(self, phone, passwd, mess, expData):
+        """测试方法"""
+        # 登录操作
+        self.page_obj.get_login_page().login(phone, passwd)
+        # 判断用例走向
+        if mess:
+            """失败用例"""
+            # 获取toast消息
+            toast_message = self.page_obj.get_login_page().get_toast(mess)
+            print(toast_message)
+            try:
+                # 断言toast
+                assert expData == toast_message
+            except AssertionError as e:  # 断言失败异常
+                # 截图
+                self.page_obj.get_setting_page().screen_png_adb("预期断言失败截图")
+                # 抛出异常
+                raise e
+            finally:
+                self.page_obj.get_login_page().click_return_btn()
+        else:
+            """成功用例"""
+            # 登录确认
+            self.page_obj.get_login_page().click_login_acc_btn()
+            # 取用户名
+            username = self.page_obj.get_person_page().get_username()
+            try:
+                # 断言用户名
+                assert expData == username
+            except AssertionError as e:
+                # 截图
+                self.page_obj.get_setting_page().screen_png_adb("预期断言成功截图")
+                # 抛出异常
+&gt;               raise e
+
+Scripts\test_login.py:83: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = &lt;test_login.TestLogin object at 0x03E82B30&gt;, phone = '15832089976', passwd = 'ljk520..', mess = None, expData = '用户_182'
+
+    @pytest.mark.parametrize("phone, passwd,mess,expData", login_value())
+    def test_login(self, phone, passwd, mess, expData):
+        """测试方法"""
+        # 登录操作
+        self.page_obj.get_login_page().login(phone, passwd)
+        # 判断用例走向
+        if mess:
+            """失败用例"""
+            # 获取toast消息
+            toast_message = self.page_obj.get_login_page().get_toast(mess)
+            print(toast_message)
+            try:
+                # 断言toast
+                assert expData == toast_message
+            except AssertionError as e:  # 断言失败异常
+                # 截图
+                self.page_obj.get_setting_page().screen_png_adb("预期断言失败截图")
+                # 抛出异常
+                raise e
+            finally:
+                self.page_obj.get_login_page().click_return_btn()
+        else:
+            """成功用例"""
+            # 登录确认
+            self.page_obj.get_login_page().click_login_acc_btn()
+            # 取用户名
+            username = self.page_obj.get_person_page().get_username()
+            try:
+                # 断言用户名
+&gt;               assert expData == username
+E               AssertionError: assert '用户_182' == '用户_1892'
+E                 - 用户_182
+E                 + 用户_1892
+E                 ?      +
+
+Scripts\test_login.py:78: AssertionError</stack-trace>
+      </failure>
+      <attachments>
+        <attachment source="5e28a80b-8d22-4e1b-bcc4-2a0b940b6e9a-attachment.png" title="预期断言成功截图" type="image/png"/>
+      </attachments>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="28556-MainThread"/>
+        <label name="host" value="LAPTOP-9GLUA8SV"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1577421147916" status="passed" stop="1577421173397">
+      <description>测试方法</description>
+      <name>TestLogin.test_login[ 15832089976-ljk520..-None-\u7528\u6237_1892]</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="28556-MainThread"/>
+        <label name="host" value="LAPTOP-9GLUA8SV"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1577421173400" status="passed" stop="1577421199419">
+      <description>测试方法</description>
+      <name>TestLogin.test_login[15832089976 -ljk520..-None-\u7528\u6237_1892]</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="28556-MainThread"/>
+        <label name="host" value="LAPTOP-9GLUA8SV"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1577421199422" status="passed" stop="1577421208184">
+      <description>测试方法</description>
+      <name>TestLogin.test_login[15832089976-ljk520-\u9519\u8bef-\u8d26\u53f7\u6216\u5bc6\u7801\u9519\u8bef]</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="28556-MainThread"/>
+        <label name="host" value="LAPTOP-9GLUA8SV"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1577421208186" status="passed" stop="1577421218908">
+      <description>测试方法</description>
+      <name>TestLogin.test_login[1583208997-159357-\u8fd8\u672a\u6ce8\u518c-\u8d26\u53f7\u8fd8\u672a\u6ce8\u518c\uff0c\u8bf7\u60a8\u5148\u8fdb\u884c\u6ce8\u518c]</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="28556-MainThread"/>
+        <label name="host" value="LAPTOP-9GLUA8SV"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1577421218913" status="passed" stop="1577421229795">
+      <description>测试方法</description>
+      <name>TestLogin.test_login[158320899766-159357-\u8fd8\u672a\u6ce8\u518c-\u8d26\u53f7\u8fd8\u672a\u6ce8\u518c\uff0c\u8bf7\u60a8\u5148\u8fdb\u884c\u6ce8\u518c]</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="28556-MainThread"/>
+        <label name="host" value="LAPTOP-9GLUA8SV"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1577421229800" status="passed" stop="1577421241512">
+      <description>测试方法</description>
+      <name>TestLogin.test_login[158320899-159357-\u8fd8\u672a\u6ce8\u518c-\u8d26\u53f7\u8fd8\u672a\u6ce8\u518c\uff0c\u8bf7\u60a8\u5148\u8fdb\u884c\u6ce8\u518c]</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="28556-MainThread"/>
+        <label name="host" value="LAPTOP-9GLUA8SV"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1577421241515" status="passed" stop="1577421252444">
+      <description>测试方法</description>
+      <name>TestLogin.test_login[hello#-159357-\u8fd8\u672a\u6ce8\u518c-\u8d26\u53f7\u8fd8\u672a\u6ce8\u518c\uff0c\u8bf7\u60a8\u5148\u8fdb\u884c\u6ce8\u518c]</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="28556-MainThread"/>
+        <label name="host" value="LAPTOP-9GLUA8SV"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1577421252446" status="passed" stop="1577421263010">
+      <description>测试方法</description>
+      <name>TestLogin.test_login[15555555555-159357-\u8fd8\u672a\u6ce8\u518c-\u8d26\u53f7\u8fd8\u672a\u6ce8\u518c\uff0c\u8bf7\u60a8\u5148\u8fdb\u884c\u6ce8\u518c]</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="28556-MainThread"/>
+        <label name="host" value="LAPTOP-9GLUA8SV"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+  </test-cases>
+</ns0:test-suite>

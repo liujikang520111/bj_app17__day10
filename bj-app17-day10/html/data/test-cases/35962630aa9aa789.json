@@ -1,0 +1,84 @@
+{
+  "uid" : "35962630aa9aa789",
+  "name" : "TestLogin.test_login[15832089976-ljk520..-None-\\u7528\\u6237_182]",
+  "fullName" : "test_login.TestLogin.test_login[15832089976-ljk520..-None-\\u7528\\u6237_182]",
+  "historyId" : "b733177177a40cbbbb327b855894ec6c",
+  "time" : {
+    "start" : 1577421079485,
+    "stop" : 1577421147912,
+    "duration" : 68427
+  },
+  "description" : "测试方法",
+  "descriptionHtml" : "<p>测试方法</p>\n",
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert '用户_182' == '用户_1892'\n  - 用户_182\n  + 用户_1892\n  ?      +",
+  "statusTrace" : "self = <test_login.TestLogin object at 0x03E82B30>, phone = '15832089976', passwd = 'ljk520..', mess = None, expData = '用户_182'\n\n    @pytest.mark.parametrize(\"phone, passwd,mess,expData\", login_value())\n    def test_login(self, phone, passwd, mess, expData):\n        \"\"\"测试方法\"\"\"\n        # 登录操作\n        self.page_obj.get_login_page().login(phone, passwd)\n        # 判断用例走向\n        if mess:\n            \"\"\"失败用例\"\"\"\n            # 获取toast消息\n            toast_message = self.page_obj.get_login_page().get_toast(mess)\n            print(toast_message)\n            try:\n                # 断言toast\n                assert expData == toast_message\n            except AssertionError as e:  # 断言失败异常\n                # 截图\n                self.page_obj.get_setting_page().screen_png_adb(\"预期断言失败截图\")\n                # 抛出异常\n                raise e\n            finally:\n                self.page_obj.get_login_page().click_return_btn()\n        else:\n            \"\"\"成功用例\"\"\"\n            # 登录确认\n            self.page_obj.get_login_page().click_login_acc_btn()\n            # 取用户名\n            username = self.page_obj.get_person_page().get_username()\n            try:\n                # 断言用户名\n                assert expData == username\n            except AssertionError as e:\n                # 截图\n                self.page_obj.get_setting_page().screen_png_adb(\"预期断言成功截图\")\n                # 抛出异常\n>               raise e\n\nScripts\\test_login.py:83: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <test_login.TestLogin object at 0x03E82B30>, phone = '15832089976', passwd = 'ljk520..', mess = None, expData = '用户_182'\n\n    @pytest.mark.parametrize(\"phone, passwd,mess,expData\", login_value())\n    def test_login(self, phone, passwd, mess, expData):\n        \"\"\"测试方法\"\"\"\n        # 登录操作\n        self.page_obj.get_login_page().login(phone, passwd)\n        # 判断用例走向\n        if mess:\n            \"\"\"失败用例\"\"\"\n            # 获取toast消息\n            toast_message = self.page_obj.get_login_page().get_toast(mess)\n            print(toast_message)\n            try:\n                # 断言toast\n                assert expData == toast_message\n            except AssertionError as e:  # 断言失败异常\n                # 截图\n                self.page_obj.get_setting_page().screen_png_adb(\"预期断言失败截图\")\n                # 抛出异常\n                raise e\n            finally:\n                self.page_obj.get_login_page().click_return_btn()\n        else:\n            \"\"\"成功用例\"\"\"\n            # 登录确认\n            self.page_obj.get_login_page().click_login_acc_btn()\n            # 取用户名\n            username = self.page_obj.get_person_page().get_username()\n            try:\n                # 断言用户名\n>               assert expData == username\nE               AssertionError: assert '用户_182' == '用户_1892'\nE                 - 用户_182\nE                 + 用户_1892\nE                 ?      +\n\nScripts\\test_login.py:78: AssertionError",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "AssertionError: assert '用户_182' == '用户_1892'\n  - 用户_182\n  + 用户_1892\n  ?      +",
+    "statusTrace" : "self = <test_login.TestLogin object at 0x03E82B30>, phone = '15832089976', passwd = 'ljk520..', mess = None, expData = '用户_182'\n\n    @pytest.mark.parametrize(\"phone, passwd,mess,expData\", login_value())\n    def test_login(self, phone, passwd, mess, expData):\n        \"\"\"测试方法\"\"\"\n        # 登录操作\n        self.page_obj.get_login_page().login(phone, passwd)\n        # 判断用例走向\n        if mess:\n            \"\"\"失败用例\"\"\"\n            # 获取toast消息\n            toast_message = self.page_obj.get_login_page().get_toast(mess)\n            print(toast_message)\n            try:\n                # 断言toast\n                assert expData == toast_message\n            except AssertionError as e:  # 断言失败异常\n                # 截图\n                self.page_obj.get_setting_page().screen_png_adb(\"预期断言失败截图\")\n                # 抛出异常\n                raise e\n            finally:\n                self.page_obj.get_login_page().click_return_btn()\n        else:\n            \"\"\"成功用例\"\"\"\n            # 登录确认\n            self.page_obj.get_login_page().click_login_acc_btn()\n            # 取用户名\n            username = self.page_obj.get_person_page().get_username()\n            try:\n                # 断言用户名\n                assert expData == username\n            except AssertionError as e:\n                # 截图\n                self.page_obj.get_setting_page().screen_png_adb(\"预期断言成功截图\")\n                # 抛出异常\n>               raise e\n\nScripts\\test_login.py:83: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <test_login.TestLogin object at 0x03E82B30>, phone = '15832089976', passwd = 'ljk520..', mess = None, expData = '用户_182'\n\n    @pytest.mark.parametrize(\"phone, passwd,mess,expData\", login_value())\n    def test_login(self, phone, passwd, mess, expData):\n        \"\"\"测试方法\"\"\"\n        # 登录操作\n        self.page_obj.get_login_page().login(phone, passwd)\n        # 判断用例走向\n        if mess:\n            \"\"\"失败用例\"\"\"\n            # 获取toast消息\n            toast_message = self.page_obj.get_login_page().get_toast(mess)\n            print(toast_message)\n            try:\n                # 断言toast\n                assert expData == toast_message\n            except AssertionError as e:  # 断言失败异常\n                # 截图\n                self.page_obj.get_setting_page().screen_png_adb(\"预期断言失败截图\")\n                # 抛出异常\n                raise e\n            finally:\n                self.page_obj.get_login_page().click_return_btn()\n        else:\n            \"\"\"成功用例\"\"\"\n            # 登录确认\n            self.page_obj.get_login_page().click_login_acc_btn()\n            # 取用户名\n            username = self.page_obj.get_person_page().get_username()\n            try:\n                # 断言用户名\n>               assert expData == username\nE               AssertionError: assert '用户_182' == '用户_1892'\nE                 - 用户_182\nE                 + 用户_1892\nE                 ?      +\n\nScripts\\test_login.py:78: AssertionError",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "b88614aec8e91e98",
+      "name" : "预期断言成功截图",
+      "source" : "b88614aec8e91e98.png",
+      "type" : "image/png",
+      "size" : 232440
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : true,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-9GLUA8SV"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "thread",
+    "value" : "28556-MainThread"
+  }, {
+    "name" : "suite",
+    "value" : "test_login"
+  }, {
+    "name" : "testClass",
+    "value" : "test_login"
+  }, {
+    "name" : "testMethod",
+    "value" : "TestLogin.test_login[15832089976-ljk520..-None-\\u7528\\u6237_182]"
+  }, {
+    "name" : "package",
+    "value" : "test_login"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "35962630aa9aa789.json",
+  "parameterValues" : [ ]
+}

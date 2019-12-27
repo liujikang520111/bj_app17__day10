@@ -1,0 +1,60 @@
+{
+  "uid" : "48682b13f1620168",
+  "name" : "TestLogin.test_login[ 15832089976-ljk520..-None-\\u7528\\u6237_1892]",
+  "fullName" : "test_login.TestLogin.test_login[ 15832089976-ljk520..-None-\\u7528\\u6237_1892]",
+  "historyId" : "841df08336760dd4f55b041f3fa705f9",
+  "time" : {
+    "start" : 1577421147916,
+    "stop" : 1577421173397,
+    "duration" : 25481
+  },
+  "description" : "测试方法",
+  "descriptionHtml" : "<p>测试方法</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-9GLUA8SV"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "thread",
+    "value" : "28556-MainThread"
+  }, {
+    "name" : "suite",
+    "value" : "test_login"
+  }, {
+    "name" : "testClass",
+    "value" : "test_login"
+  }, {
+    "name" : "testMethod",
+    "value" : "TestLogin.test_login[ 15832089976-ljk520..-None-\\u7528\\u6237_1892]"
+  }, {
+    "name" : "package",
+    "value" : "test_login"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "48682b13f1620168.json",
+  "parameterValues" : [ ]
+}

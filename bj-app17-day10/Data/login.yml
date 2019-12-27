@@ -1,0 +1,46 @@
+login_001:
+  phone: "15832089976"
+  passwd: "ljk520.."
+  mess:
+  expData: "用户_182"
+login_002:
+  phone: " 15832089976"
+  passwd: "ljk520.."
+  mess:
+  expData: "用户_1892"
+login_003:
+  phone: "15832089976 "
+  passwd: "ljk520.."
+  mess:
+  expData: "用户_1892"
+
+login_004:
+  phone: "15832089976"
+  passwd: "ljk520"
+  mess: "错误"
+  expData: "账号或密码错误"
+login_005:
+  phone: "1583208997"
+  passwd: "159357"
+  mess: "还未注册"
+  expData: "账号还未注册，请您先进行注册"
+login_006:
+  phone: "158320899766"
+  passwd: "159357"
+  mess: "还未注册"
+  expData: "账号还未注册，请您先进行注册"
+login_007:
+  phone: "158320899"
+  passwd: "159357"
+  mess: "还未注册"
+  expData: "账号还未注册，请您先进行注册"
+login_008:
+  phone: "hello#"
+  passwd: "159357"
+  mess: "还未注册"
+  expData: "账号还未注册，请您先进行注册"
+login_009:
+  phone: "15555555555"
+  passwd: "159357"
+  mess: "还未注册"
+  expData: "账号还未注册，请您先进行注册"
